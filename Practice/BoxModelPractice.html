@@ -1,8 +1,8 @@
-< !DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial=1.0>"
+        <meta name="viewport" content="width-device-width, initial-scale=1.0>"
         <title>Box Model Practice</title>
         <style>
             div {
@@ -15,9 +15,12 @@
                 box-sizing: border-box;
 
             }
+            /*for the second box to float right */
             #Secondbox {
                 float: right;
             }
+
+            /*First box absolute positioning */
             #firstbox{
                 position:absolute;
                 top: 50px;
@@ -30,7 +33,9 @@
         <div id="firstbox">
             <p>box 1</p>
         </div>
-        <div id="#Secondbox">
+
+        <!--Correct ID selector for box 2-->
+        <div id="Secondbox">
             <p>box 2</p>
         </div>
 

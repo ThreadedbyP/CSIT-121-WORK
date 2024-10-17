@@ -8,11 +8,11 @@ body {
 }
 
 footer {
-  color: white;
+  color: blue;
 }
 
 i {
-  color: white;
+  color: blue;
 }
 
 nav ul li {
@@ -20,7 +20,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: blue;
     text-decoration: none;
 }
 

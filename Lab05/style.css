@@ -1,0 +1,46 @@
+/* Base styling*/
+body{
+  font-family: Arial, sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: blueviolet;
+}
+
+nav ul li {
+   margin: 0.5em;
+}
+
+nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+main {
+  padding: 1em;
+}
+  
+article {
+  margin-bottom: 2em;
+}
+
+/*Mobile layout: single-column*/
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  article { 
+      width: 100%;
+  }
+}
+/*Desktop layout: multi-column*/
+@media (min-width: 769px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em
+  }
+  article {
+    width: calc(50% - 1em);
+  }
+}

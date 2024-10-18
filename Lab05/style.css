@@ -9,7 +9,7 @@ body {
 
 /*Header syling*/
 header {
-  background-color: indigo;
+  background-color: green;
   color:white;
   padding: 1.5em;
   text-align: center;
@@ -52,7 +52,7 @@ article {
 }
 
 article h2{
-  color: #ff6347;
+  color: lightgreen;
 }
 
 /*Italized text styling */

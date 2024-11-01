@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background */
-    color: white; /* White text */
+    background-color: white; /* Black background */
+    color: black; /* White text */
   }
   
   /* Navigation bar */

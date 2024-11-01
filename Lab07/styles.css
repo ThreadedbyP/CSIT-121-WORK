@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+  }
+  
+  /* Navigation bar */
+  nav ul {
+    list-style-type: none;
+    background-color: orange;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #;
+  }
+  
+  /* Main content */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+  /* Header row styling */
+  thead th {
+    background-color: Black;
+    color: white;
+  }
+  
+  /* Tier row colors */
+  tbody tr:nth-child(1) th, /* S Tier */
+  tbody tr:nth-child(1) td {
+    background-color: #0099FF;
+  }
+  
+  tbody tr:nth-child(2) th, /* A Tier */
+  tbody tr:nth-child(2) td {
+    background-color: #00CC00;
+  }
+  
+  tbody tr:nth-child(3) th, /* B Tier */
+  tbody tr:nth-child(3) td {
+    background-color: #CCFF66;
+  }
+  
+  tbody tr:nth-child(4) th, /* C Tier */
+  tbody tr:nth-child(4) td {
+    background-color: #FFCC33;
+  }
+  
+  tbody tr:nth-child(5) th, /* D Tier */
+  tbody tr:nth-child(5) td {
+    background-color: #FF9933;
+  }
+  
+  /* Image styling within table cells */
+  img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Title styling */
+  h1 {
+    color: #fff;
+    font-size: 2em;
+  }
+  

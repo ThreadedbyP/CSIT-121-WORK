@@ -4,10 +4,13 @@ body {
     background-color: #000;
     color: #fff;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     color: #00f;
+    margin-top: 20px;
 }
 
 /* Navigation Styles */
@@ -31,40 +34,38 @@ nav a:hover {
 table {
     width: 80%;
     margin: 20px auto;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 1.2em;
+    border-collapse: separate; /* Allows space between borders */
+    border-spacing: 10px; /* Adds space between cells */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adds shadow around the table */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    padding: 20px; /* Adds padding within cells */
+    border-radius: 10px; /* Rounds corners */
+    color: #fff; /* White text for contrast */
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Row Colors */
 .tier-s {
-    background-color: #0094ff; /* Blue for S tier */
-    color: #fff;
+    background-color: #007acc; /* Dark blue for S tier */
 }
 
 .tier-a {
-    background-color: #33cc33; /* Green for A tier */
-    color: #000;
+    background-color: #28a745; /* Green for A tier */
 }
 
 .tier-b {
-    background-color: #ccff66; /* Light green for B tier */
-    color: #000;
+    background-color: #ffc107; /* Yellow for B tier */
 }
 
 .tier-c {
-    background-color: #ffcc33; /* Yellow for C tier */
-    color: #000;
+    background-color: #fd7e14; /* Orange for C tier */
 }
 
 .tier-d {
-    background-color: #ff9933; /* Orange for D tier */
-    color: #000;
+    background-color: #dc3545; /* Red for D tier */
 }
 
 /* Image Styling */
@@ -77,7 +78,7 @@ td img {
 
 /* Table Header Styling */
 thead th {
-    background-color: #ddd;
-    color: #333;
-    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
 }

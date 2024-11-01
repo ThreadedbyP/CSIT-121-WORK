@@ -1,71 +1,83 @@
-/* Global Styles */
+/* Basic Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
 }
 
+h1 {
+    color: #00f;
+}
+
+/* Navigation Styles */
 nav {
-    background: #333;
-    color: #fff;
+    background-color: #333;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
     color: #fff;
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
 }
 
-h1 {
-    color: #333;
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* Table Styling */
 table {
-    width: 100%;
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
+    padding: 10px;
 }
 
-th {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Form Styling */
-form {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-}
-
-button {
-    background-color: #333;
+/* Row Colors */
+.tier-s {
+    background-color: #0094ff; /* Blue for S tier */
     color: #fff;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+.tier-a {
+    background-color: #33cc33; /* Green for A tier */
+    color: #000;
+}
+
+.tier-b {
+    background-color: #ccff66; /* Light green for B tier */
+    color: #000;
+}
+
+.tier-c {
+    background-color: #ffcc33; /* Yellow for C tier */
+    color: #000;
+}
+
+.tier-d {
+    background-color: #ff9933; /* Orange for D tier */
+    color: #000;
+}
+
+/* Image Styling */
+td img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Table Header Styling */
+thead th {
+    background-color: #ddd;
+    color: #333;
+    font-weight: bold;
 }

@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Responsive Navigation Bar-->
-    <nav class="navbar">
-        <a href="index.html" class="nav-logo">My site</a>
-        <ul class="nav-links" id="navLinks">
-        <li><a href="GIF.html">GIF Example</a></li>
-        <li><a href="JPG.html">JPG Example</a></li>
-        <li><a href="PNG.html">PNG Example</a></li>
-    </ul>
-    <button class="nav-toggle" onclick="toggleNav()">≡</button>
-    </nav>
+    <!--Full-screen Overlay Navigation-->
+    <div class="overlay" id="myNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="GIF.html">GIF Example</a>
+            <a href="JPG.html">JPG Example</a>
+            <a href="PNG.html">PNG Example</a>
+        </div>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
 
     <h1>PNG Image Example</h1>
     <img src="Garden_of_Eden.png" alt="Garden of Eden">

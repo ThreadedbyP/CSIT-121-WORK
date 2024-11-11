@@ -1,0 +1,106 @@
+body {
+    background-color: #121212;
+    color:white;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+
+h1 {
+    color: #D1C4E9;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: magen;
+}
+
+nav a:hover, .overlay a:focus {
+    color: #CE93D8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 15px; 
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(26, 35, 126, 0.95); 
+    overflow-x: hidden;
+    transition: 0.5s;    
+}
+
+.openNav-header {
+    background-color: #1A237E;
+    color:#D1C4E9;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #D1C4E9;
+    display: block;
+    transition: color 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #CE93D8;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Smaller screens overlay adjustments */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

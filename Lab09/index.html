@@ -76,6 +76,8 @@
             // Start to fetch the data by using TagName 
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
+                    x[i].getElementByTagName("employee id")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
                     x[i].getElementsByTagName("firstname")[0]
                         .childNodes[0].nodeValue + "</td><td>" +
                     x[i].getElementsByTagName("lastname")[0]

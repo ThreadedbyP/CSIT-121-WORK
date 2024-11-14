@@ -1,0 +1,45 @@
+function loadXMLDoc() {
+    const table = document.getElementById("id");
+    const button = document.querySelector(".button");
+
+    if (table.style.display === "none" || !table.innerHTML) {
+        // If table is hidden or empty, load data and show it
+        let xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                empDetails(this);
+                table.style.display = "block";
+                button.textContent = "Close Employee Data";
+            }
+        };
+        xmlhttp.open("GET", "employee.xml", true);
+        xmlhttp.send();
+    } else {
+        // Hide table and update button text
+        table.style.display = "none";
+        button.textContent = "Get Employee Data";
+    }
+}
+
+function empDetails(xml) {
+    let xmlDoc = xml.responseXML;
+    let table =
+        `<tr><th>Employee ID</th><th>Firstname</th><th>Lastname</th>
+            <th>Title</th><th>Division</th>
+            <th>Building</th><th>Room</th>
+        </tr>`;
+    const x = xmlDoc.getElementsByTagName("employee");
+
+    for (let i = 0; i < x.length; i++) {
+        table += "<tr><td>" +
+            x[i].getAttribute("id") + "</td><td>" +
+            x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("division")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("building")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("room")[0].childNodes[0].nodeValue + "</td></tr>";
+    }
+
+    document.getElementById("id").innerHTML = table;
+}

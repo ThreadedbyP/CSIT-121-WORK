@@ -67,15 +67,17 @@
             let i;
             let xmlDoc = xml.responseXML;
             let table =
-                `<tr><th>Firstname</th><th>Lastname</th>
-                    <th>Title</th><th>Division</th>
-                    <th>Building</th><th>Room</th>
+                `<tr><th>Employee ID</th><th>Firstname</th><th>Lastname</th>
+                     <th>Title</th><th>Division</th>
+                     <th>Building</th><th>Room</th>
+                    
                 </tr>`;
             let x = xmlDoc.getElementsByTagName("employee");
 
             // Start to fetch the data by using TagName 
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
+                    x[i].getAttribute("id") + "</td><td>"
                     x[i].getElementsByTagName("firstname")[0]
                         .childNodes[0].nodeValue + "</td><td>" +
                     x[i].getElementsByTagName("lastname")[0]

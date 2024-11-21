@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It's Used</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>How to Use the Picture-in-Picture API</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="importance.html">Why It’s Important</a></li>
+                <li><a href="usage.html">How It’s Used</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Example Usage</h2>
+            <p>Here is a basic example of how to use the Picture-in-Picture API:</p>
+            <pre>
+<code>
+const video = document.querySelector('video');
+video.requestPictureInPicture()
+    .then(() => console.log('Picture-in-Picture started'))
+    .catch(err => console.error(err));
+</code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rhoda’s Lab10 Project</p>
+    </footer>
+</body>
+</html>

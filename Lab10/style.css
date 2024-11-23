@@ -1,0 +1,158 @@
+/* General body and page setup */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf; /* Light grey background */
+}
+
+/* Button to open overlay menu */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fc5723; /* Vibrant orange */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Ensures the button stays on top */
+}
+
+/* Overlay full-screen menu styles */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(252, 87, 35, 0.9); /* Semi-transparent vibrant orange */
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1; /* Overlay will be behind the button */
+}
+
+/* Content inside the overlay menu */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Links inside the overlay */
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff; /* White color for text */
+    display: block;
+    transition: 0.3s;
+}
+
+/* Hover effect for links */
+.overlay a:hover {
+    color: #aaaaaa; /* Medium grey on hover */
+}
+
+/* Close button for overlay */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #ffffff; /* White color */
+}
+
+/* Header styles */
+header {
+    background-color: #fc5723; /* Vibrant orange */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+}
+
+/* Section heading */
+h2 {
+    color: #fc5723; /* Vibrant orange */
+    margin-bottom: 20px;
+}
+
+/* Styling for the list of significance */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Visual representation image styling */
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    color: #fc5723; /* Vibrant orange */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#myGif {
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* Distance from the top of the page */
+    right: 10px; /* Distance from the right side of the page */
+    z-index: 1000; /* Ensure it's on top of other content */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #fc5723; /* Vibrant orange */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .openbtn {
+        font-size: 18px;
+    }
+
+    .overlay a {
+        font-size: 28px;
+    }
+
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 10px;
+        right: 30px;
+    }
+}
+
+@media (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

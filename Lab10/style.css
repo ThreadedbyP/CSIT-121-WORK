@@ -1,3 +1,11 @@
+/* General body and page setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D8EFF7;
+}
+
 /* Button to open overlay menu */
 .openbtn {
     font-size: 20px;
@@ -6,10 +14,10 @@
     color: white;
     border: none;
     padding: 10px 15px;
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Ensures the button stays on top */
 }
 
 /* Overlay full-screen menu styles */
@@ -19,44 +27,48 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(72, 64, 163, 0.9);
+    background-color: rgba(72, 64, 163, 0.9); /* Dark purple with transparency */
     overflow-x: hidden;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 1; /* Overlay will be behind the button */
 }
 
+/* Content inside the overlay menu */
 .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
 
+/* Links inside the overlay */
 .overlay a {
     padding: 10px;
     text-decoration: none;
     font-size: 36px;
-    color: #9CBBFC;
+    color: #9CBBFC; /* Light blue */
     display: block;
     transition: 0.3s;
 }
 
+/* Hover effect for links */
 .overlay a:hover {
-    color: #F9CD6A; 
+    color: #F9CD6A; /* Gold color */
 }
 
+/* Close button for overlay */
 .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-    color: #F9CD6A;
+    color: #F9CD6A; /* Gold color */
 }
 
+/* Responsiveness for smaller screens */
 @media (max-height: 450px) {
-    .overlay a
-         {font-size: 20px;
+    .overlay a {
+        font-size: 20px;
     }
     .overlay .closebtn {
         font-size: 40px;
@@ -64,6 +76,3 @@
         right: 35px;
     }
 }
-
-
-

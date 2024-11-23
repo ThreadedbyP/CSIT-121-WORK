@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Full-screen Overlay Navigation-->
+   <div class="overlay" id="myNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="importance.html">Importance</a>
+        <a href="usage.html">Usage</a>
+        <a href="sources.html">Sources</a>
+    </div>
+   </div> <!-- Close overlay div here -->
+   
+   <!-- Menu button placed outside the overlay for visibility -->
+   <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    
+
+    <!-- Main content -->
+    <main>
+        <!-- Tabs content -->
+        <section>
+            <h2>Welcome to My Page</h2>
+            <p>This page demonstrates an interactive menu and layout styling techniques.</p>
+        </section>
+
+        <!-- GIF below the tabs -->
+        <section id="gifSection">
+            <h2>Check out this cool GIF!</h2>
+            <img src="welcome.gif" alt="Cool animation" class="gif-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Praise - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

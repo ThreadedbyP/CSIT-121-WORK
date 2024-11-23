@@ -5,52 +5,62 @@
     box-sizing: border-box;
 }
 
+/* Style the sidenav */
+#mySidenav {
+    position: fixed; /* Fix the sidenav to the left */
+    top: 0;
+    left: 0;
+    width: 200px; /* Wider sidenav for visibility */
+    height: 100%; /* Full height */
+    background-color: #023336; /* Deep green background */
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adding shadow */
+}
+
 /* Style the links inside the sidenav */
 #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
+    display: block; /* Make the links block-level */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Increase font size */
-    color: #EAF8E7; /* White text color */
+    color: #EAF8E7; /* Light text color */
+    padding: 15px;
+    width: 100%; /* Make links span the full width of the sidenav */
+    transition: 0.3s; /* Add smooth transition for hover */
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
-  
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #about {
-    top: 20px;
+}
+
+/* Hover effect for links */
+#mySidenav a:hover {
+    background-color: #4DA674; /* Highlight on hover */
+}
+
+/* No bullets for list items */
+#mySidenav a {
+    list-style-type: none;
+}
+
+/* Styling for individual links with background colors */
+#about {
     background-color: #4DA674;
-  }
-  
-  #blog {
-    top: 80px;
-    background-color: #C1E6BA; 
-  }
-  
-  #projects {
-    top: 140px;
+}
+#blog {
+    background-color: #C1E6BA;
+}
+#projects {
     background-color: #EAF8E7;
     color: #023336;
-  }
-  
-  #contact {
-    top: 200px;
+}
+#contact {
     background-color: #023336;
     color: #EAF8E7;
-  }
-  
+}
+
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #EAF8E7; /* Light greenish background */
-    color: #023336; /* Deep green text for good contrast */
+    color: #023336; /* Deep green text */
 }
 
 /* Header */
@@ -60,6 +70,7 @@ header {
     padding: 1rem;
     text-align: center;
     position: relative;
+    margin-left: 220px; /* Offset to make room for the sidenav */
 }
 
 header h1 {
@@ -75,11 +86,10 @@ header h1 {
 
 /* Main Content */
 main {
-    margin-left: 0;
+    margin-left: 220px; /* Offset to make room for the sidenav */
     padding: 2rem;
     transition: margin-left 0.3s;
 }
-
 
 /* Section Styling */
 section {
@@ -145,4 +155,3 @@ pre, code {
     overflow-x: auto;
     display: block;
 }
-

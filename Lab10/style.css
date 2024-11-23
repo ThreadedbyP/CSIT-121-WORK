@@ -104,7 +104,7 @@ nav ul li a:hover {
     width: 250px;
     height: 100%;
     background-color: #333;
-    color: #fff;
+    color:black;
     padding: 1rem;
     transition: left 0.3s ease;
     z-index: 1000;
@@ -116,7 +116,7 @@ nav ul li a:hover {
 
 .side-nav a {
     display: block;
-    color: #fff;
+    color: black;
     text-decoration: none;
     margin: 10px 0;
     font-size: 1.2rem;
@@ -148,12 +148,23 @@ button {
 button:hover {
     background-color: #555;
 }
-img {
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    width: 100%;         /* ke the image take up 100% of its container */
-    max-width: 600px;    /* Limit the maximum width to 600px */
-    height: auto;        /* Maintain aspect ratio */
-    display: block;      /* Make the image block level (removes any space below it) */
-    margin: 0 auto;      /* Center the image horizontally */
+/* Container for the image */
+.image-container {
+    display: flex;
+    align-items: center;  /* Aligns the image and caption vertically */
+    margin-top: 20px;
 }
+
+/* Image styles */
+.image-container img {
+    width: 40%;        /* Set width to 40% to keep it smaller */
+    height: auto;      /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and caption */
+}
+
+/* Caption styles */
+.image-container figcaption {
+    font-size: 1.2em;
+    text-align: left;  /* Align the caption text to the left */
+}
+

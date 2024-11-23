@@ -10,21 +10,24 @@ body {
   
   /* Style the navigation menu */
 .navbar {
-    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #555;
-    overflow: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    flex-wrap: nonwrap;
   }
   
   /* Navigation links */
   .navbar a {
-    float: left;
-    padding: 12px;
+    flex: 1;
+    padding: 12px 0;
     color: #F6E8DF;
     text-decoration: none;
     font-size: 17px;
-    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-    text-align: center; /* If you want the text to be centered */
+    text-align: center;
+    background-color: #3E3C6E;
+
   }
   
   /* Add a background color on mouse-over */
@@ -39,13 +42,15 @@ body {
   
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
   @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
+    .navbar {
+        flex-wrap: wrap;
     }
-  }
+    .navbar a {
+        flex: 100%;
+        text-align: left;
+    }
+}
+
   
   
   h1 {

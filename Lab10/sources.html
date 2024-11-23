@@ -8,24 +8,35 @@
 </head>
 <body>
     <header>
-        <button id="menu-button" onclick="toggleMenu()">≡ Menu</button>
-        <h1>Sources</h1>  
-    </header> 
+        <div id="toggle-btn" onclick="toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <h1>Sources</h1>
+    </header>
     
-    <nav id="side-nav" class="side-nav">
-        <a href="index.html">Home</a></li>
-        <a href="importance.html">Importance</a></li>
-        <a href="usage.html">How to Used</a></li>
-        <a href="sources.html">Sources</a></li>
+    <nav id="sidebar" class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="importance.html">Why It’s Important</a></li>
+            <li><a href="usage.html">How It’s Used</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
     </nav>
-
+    
     <main>
         <section>
             <h2>References</h2>
             <ul>
-                <li>MDN Web Docs. (n.d.). Picture-in-Picture API. Retrieved from https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API</li>
-                <li>Smith, J. (2023). Enhancing Web Video Playback with Picture-in-Picture. Web Dev Journal.</li>
-                <li>Doe, A. (2023). Advanced Features of the Picture-in-Picture API. Tech Blog.</li>
+                <li>MDN Web Docs. (n.d.). Picture-in-Picture API. Retrieved from 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API" target="_blank">
+                        https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API
+                    </a>
+                </li>
+                <li>Smith, J. (2023). Enhancing Web Video Playback with Picture-in-Picture. *Web Dev Journal.*</li>
+                <li>Doe, A. (2023). Advanced Features of the Picture-in-Picture API. *Tech Blog.*</li>
             </ul>
         </section>
     </main>
@@ -33,6 +44,7 @@
     <footer>
         <p>&copy; 2024 Praise's Lab10 Project</p>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

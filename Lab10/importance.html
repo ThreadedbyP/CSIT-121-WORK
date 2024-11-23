@@ -8,33 +8,41 @@
 </head>
 <body>
     <header>
-        <button id="menu-button" onclick="toggleMenu()">≡ Menu</button>
+        <div id="toggle-btn" onclick="toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <h1>Importance of Picture-in-Picture API</h1>
     </header>
     
-    <nav id="side-nav" class="side-nav">
-        <a href="index.html">Home</a>
-        <a href="importance.html">Why It’s Important</a>
-        <a href="usage.html">How It’s Used</a>
-        <a href="sources.html">Sources</a>
+    <nav id="sidebar" class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="importance.html">Why It’s Important</a></li>
+            <li><a href="usage.html">How It’s Used</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
     </nav>
     
     <main>
         <section>
             <h2>The Significance of Picture-in-Picture API</h2>
             <p style="font-size: 1.2em;">
-               The Picture-in-Picture API is an invaluable tool for modern web applications, enabling users to multitask effectively. </p>
+               The Picture-in-Picture API is an invaluable tool for modern web applications, enabling users to multitask effectively. 
+            </p>
             <ul style="font-size: 1.2em;">
                 <li>Enhancing productivity by enabling users to follow tutorials while working.</li>
                 <li>Improving accessibility for users with disabilities who rely on assistive technologies.</li>
                 <li>Boosting engagement on entertainment platforms where uninterrupted viewing is essential.</li>
             </ul>
             <p style="font-size: 1.2em;">
-                Futhermore, this feature has become a cornerstone for video streaming websites and applications,contributing to a better user experiences by fostering convenience and flexibility.
+                Furthermore, this feature has become a cornerstone for video streaming websites and applications, contributing to better user experiences by fostering convenience and flexibility.
             </p>
         </section>
         <section>
-            <h2>Visual Represention</h2>
+            <h2>Visual Representation</h2>
             <figure>
                 <img src="picture-in-picture.jpg" alt="Picture-in-Picture Example" style="width: 100%; max-width: 600px; display: block; margin: 0 auto;">
                 <figcaption style="text-align: center;">Example of Picture-in-Picture in Action</figcaption>

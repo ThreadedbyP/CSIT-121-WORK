@@ -13,13 +13,14 @@ body {
     width: 100%;
     background-color: #555;
     overflow: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
   /* Navigation links */
   .navbar a {
     float: left;
     padding: 12px;
-    color: white;
+    color: #F6E8DF;
     text-decoration: none;
     font-size: 17px;
     width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
@@ -28,12 +29,12 @@ body {
   
   /* Add a background color on mouse-over */
   .navbar a:hover {
-    background-color: #000;
+    background-color: #FEAE97;
   }
   
   /* Style the current/active link */
   .navbar a.active {
-    background-color: #04AA6D;
+    background-color: #FE979B;
   }
   
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
@@ -46,32 +47,6 @@ body {
     }
   }
   
-  /* Individual Button Styles */
-  #home {
-    top: 20px;
-    background-color: #FE979B;
-  }
-  
-  #importance {
-    top: 80px;
-    background-color: #FEAE97;
-  }
-  
-  #usage {
-    top: 140px;
-    background-color: #3E3C6E;
-  }
-  
-  #sources {
-    top: 200px;
-    background-color: #555;
-  }
-  
-  /* Content Styles */
-  .content {
-    margin-left: 120px; /* Leaves space for sidenav */
-    padding: 20px;
-  }
   
   h1 {
     color: #3E3C6E;
@@ -82,52 +57,6 @@ body {
     margin-bottom: 1em;
   }
   
-  /* Image Styles */
-  .content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #3E3C6E;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-height: 300px; /* Ensures image isn't too large */
-  }
   
-  /* Animation Section */
-  .animation-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 80px;
-    height: 80px;
-    background-color: #FE979B;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    animation: float 2s ease-in-out infinite;
-  }
   
-  /* Animation Keyframes */
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  /* Footer Styling (optional for spacing adjustments) */
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3E3C6E;
-    color: #F6E8DF;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+ 

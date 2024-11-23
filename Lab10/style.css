@@ -112,7 +112,7 @@ figure figcaption {
 
 #myGif {
     position: absolute; /* Absolute positioning */
-    top: 60px; /* Distance from the top of the page */
+    top: 70px; /* Distance from the top of the page */
     right: 10px; /* Distance from the right side of the page */
     z-index: 1000; /* Ensure it's on top of other content */
     width: 100px; /* Adjust width as needed */

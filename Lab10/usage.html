@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It's Used</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="toggle-btn" onclick="toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <h1>How to Use the Picture-in-Picture API</h1>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="importance.html">Why It’s Important</a></li>
+            <li><a href="usage.html">How It’s Used</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Example Usage</h2>
+            <pre><code>
+const video = document.querySelector('video');
+video.requestPictureInPicture()
+    .then(() => console.log('Picture-in-Picture started'))
+    .catch(err => console.error(err));
+            </code></pre>
+        </section>
+        <section>
+            <h2>Practical Scenarios</h2>
+            <ul>
+                <li>Watching tutorial videos while coding or taking notes.</li>
+                <li>Streaming live events while browsing other websites.</li>
+                <li>Improving accessibility for users with visual impairments who require video overlays.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Praise's Lab10 Project</p>
+    </footer>
+</body>
+</html>

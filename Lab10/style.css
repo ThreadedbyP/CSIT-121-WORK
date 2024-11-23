@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the sidenav */
+.sidenav {
+    position: fixed; /* Fix the sidenav to the left */
+    top: 0;
+    left: 0;
+    width: 200px; /* Wider sidenav for visibility */
+    height: 100%; /* Full height */
+    background-color: #023336; /* Deep green background */
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adding shadow */
+}
+
+/* Style the links inside the sidenav */
+.sidenav a {
+    display: block; /* Make the links block-level */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: #EAF8E7; /* Light text color */
+    padding: 15px;
+    width: 100%; /* Make links span the full width of the sidenav */
+    transition: 0.3s; /* Add smooth transition for hover */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+/* Hover effect for links */
+.sidenav a:hover {
+    color: #4DA674; /* Highlight on hover */
+}
+
+/* No bullets for list items */
+.sidenav a {
+    list-style-type: none;
+}
+
+/* Styling for individual links with background colors */
+#about {
+    background-color: #4DA674;
+}
+#blog {
+    background-color: #C1E6BA;
+}
+#projects {
+    background-color: #EAF8E7;
+    color: #023336;
+}
+#contact {
+    background-color: #023336;
+    color: #EAF8E7;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #EAF8E7; /* Light greenish background */
+    color: #023336; /* Deep green text */
+}
+
+/* Header */
+header {
+    background-color: #023336; /* Deep green background */
+    color: #EAF8E7; /* Light text for contrast */
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    margin-left: 220px; /* Offset to make room for the sidenav */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #EAF8E7; 
+}
+
+/* Main Content */
+main {
+    margin-left: 220px; /* Offset to make room for the sidenav */
+    padding: 2rem;
+    transition: margin-left 0.3s;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 2rem;
+    background-color: #C1E6BA; /* Softer green for sections */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #023336; /* Deep green for headings */
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: #4DA674; /* Rich green for links */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #023336; /* Deep green hover */
+}
+
+/* Footer */
+footer {
+    background-color: #023336; /* Deep green footer */
+    color: #EAF8E7; /* Light footer text */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+/* Image Container */
+.image-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #4DA674; /* Rich green border */
+    border-radius: 10px;
+}
+
+.image-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #023336; /* Deep green caption text */
+}
+
+/* Code Blocks */
+pre, code {
+    background-color: #EAF8E7; /* Light background */
+    color: #023336; /* Deep green text */
+    padding: 1rem;
+    border: 1px solid #4DA674; /* Rich green border */
+    border-radius: 5px;
+    overflow-x: auto;
+    display: block;
+}

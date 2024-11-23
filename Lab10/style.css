@@ -1,67 +1,69 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #F6E8DF;
-    color: #3E3C6E;
-    line-height: 1.6;
-  }
-  
-  /* Style the navigation menu */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #555;
-    overflow: hidden;
-    flex-wrap: nonwrap;
-  }
-  
-  /* Navigation links */
-  .navbar a {
-    flex: 1;
-    padding: 12px 0;
-    color: #F6E8DF;
-    text-decoration: none;
-    font-size: 17px;
-    text-align: center;
-    background-color: #3E3C6E;
+/* Button to open overlay menu */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4840A3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
-  }
-  
-  /* Add a background color on mouse-over */
-  .navbar a:hover {
-    background-color: #FEAE97;
-  }
-  
-  /* Style the current/active link */
-  .navbar a.active {
-    background-color: #FE979B;
-  }
-  
-  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .navbar {
-        flex-wrap: wrap;
+/* Overlay full-screen menu styles */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(72, 64, 163, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #9CBBFC;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #F9CD6A; 
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #F9CD6A;
+}
+
+@media (max-height: 450px) {
+    .overlay a
+         {font-size: 20px;
     }
-    .navbar a {
-        flex: 100%;
-        text-align: left;
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
 }
 
-  
-  
-  h1 {
-    color: #3E3C6E;
-    font-size: 2em;
-  }
-  
-  p {
-    margin-bottom: 1em;
-  }
-  
-  
-  
- 
+
+

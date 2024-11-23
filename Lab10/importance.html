@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidenav -->
-  <div class="navbar">
-    <a class="active" href="index.html">Home</a>
-    <a href="importance.html">Search</a>
-    <a href="usage.html">Usage</a>
-    <a href="sources.html">Sources</a>
-  </div>
-
+   <!--Full-screen Overlay Navigation-->
+   <div class="overlay" id="myNav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="importance.html">Importance</a>
+        <a href="usage.html">Usage</a>
+        <a href="sources.html">Sources</a>
+    </div>
+</div>
+<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
   <!-- Main Content -->
   <div class="content">
     <h1>Why is the Picture-in-Picture API Important?</h1>

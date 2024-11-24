@@ -3,57 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sources</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GIF Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script> 
 </head>
 <body>
     
-        <!--Full-screen Overlay Navigation-->
-   <div class="overlay" id="myNav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="importance.html">Importance</a>
-        <a href="usage.html">Usage</a>
-        <a href="sources.html">Sources</a>
-    </div>
-   </div> <!-- Close overlay div here -->
-   
-   <!-- Menu button placed outside the overlay for visibility -->
-   <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
-    
-    <!-- Main content -->
-    <main>
-        <!-- Sources Section -->
-        <section>
-            <h2>References and Resources</h2>
-            <ul>
-                <li>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API" target="_blank">
-                        MDN Web Docs: Picture-in-Picture API
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.w3.org/TR/picture-in-picture/" target="_blank">
-                        W3C: Picture-in-Picture API Specification
-                    </a>
-                </li>
-                <li>
-                    <a href="https://caniuse.com/" target="_blank">
-                        Can I Use: Browser Compatibility for Picture-in-Picture API
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=example" target="_blank">
-                        YouTube Tutorial: Implementing Picture-in-Picture
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Your Name - All Rights Reserved</p>
-    </footer>
+    
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+            <a href="GIF.html">GIF Example</a>
+            <a href="JPG.html">JPG Example</a>
+            <a href="PNG.html">PNG Example</a>
+        </div>
+    </div>
+    
+    <div class="openNav-header">
+        <span onclick="openNav()">☰ Menu</span>
+    </div>
+
+    <h1>GIF Image Example</h1>
+    <img src="Water_in_Hair.gif" alt="A girl flipping water with her hair">
+    <p>This is an example of a GIF image. I chose this format because GIFs are ideal for simple animations and can support transparent backgrounds.</p>
+
 </body>
 </html>

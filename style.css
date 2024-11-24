@@ -1,15 +1,23 @@
+/* General body and page setup */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+}
+
 /* Button to open overlay menu */
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #333;
-    color: white;
+    background-color: #006270; /* Vibrant orange */
+    color: #ffffff; /* White text */
     border: none;
     padding: 10px 15px;
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Ensures the button stays on top */
 }
 
 /* Overlay full-screen menu styles */
@@ -19,51 +27,151 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 10; 
 }
 
+/* Content inside the overlay menu */
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
 
+/* Links inside the overlay */
 .overlay a {
     padding: 10px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #ffffff; /* White color for text */
     display: block;
     transition: 0.3s;
 }
 
+/* Hover effect for links */
 .overlay a:hover {
-    color: #f1f1f1; 
+    color: #00E0C7; 
 }
 
+/* Close button for overlay */
 .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: #f1f1f1;
+    right: 35px;
+    font-size: 40px;
+    color: #ffffff; /* White color */
+}
+
+.openbtn-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #006270;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+}
+
+.openbtn:hover {
+    background-color: #004850;
+}
+
+/* Header styles */
+header {
+    background-color: #006270;
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+}
+
+/* Section heading */
+h2 {
+    color: #006270;
+    margin-bottom: 20px;
+}
+
+/* Styling for the list of significance */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Visual representation image styling */
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    color: #006270; /* Vibrant orange */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#myGif {
+    position: absolute; /* Absolute positioning */
+    top: 150px; /* Distance from the top of the page */
+    right: 10px; /* Distance from the right side of the page */
+    z-index: 1000; /* Ensure it's on top of other content */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #006270; /* Vibrant orange */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .openbtn {
+        font-size: 18px;
+    }
+
+    .overlay a {
+        font-size: 28px;
+    }
+
+    .overlay .closebtn {
+        font-size: 50px;
+        top: 10px;
+        right: 30px;
+    }
 }
 
 @media (max-height: 450px) {
-    .overlay a
-         {font-size: 20px;
+    .overlay a {
+        font-size: 20px;
     }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
 }
-
-
-

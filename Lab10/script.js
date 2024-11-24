@@ -1,7 +1,13 @@
+// Open the overlay menu
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    const overlay = document.getElementById("myNav");
+    overlay.style.width = "100%"; // Expand overlay
+    document.body.style.overflow = "hidden"; // Prevent scrolling
 }
 
+// Close the overlay menu
 function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    const overlay = document.getElementById("myNav");
+    overlay.style.width = "0"; // Collapse overlay
+    document.body.style.overflow = "auto"; // Allow scrolling
 }

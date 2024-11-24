@@ -27,17 +27,16 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #009394;
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-    z-index: 1; /* Overlay will be behind the button */
+    z-index: 10; 
 }
 
 /* Content inside the overlay menu */
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
     text-align: center;
 }
 
@@ -60,9 +59,29 @@ body {
 .closebtn {
     position: absolute;
     top: 20px;
-    right: 45px;
-    font-size: 60px;
+    right: 35px;
+    font-size: 40px;
     color: #ffffff; /* White color */
+}
+
+.openbtn-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #006270;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+}
+
+.openbtn:hover {
+    background-color: #004850;
 }
 
 /* Header styles */

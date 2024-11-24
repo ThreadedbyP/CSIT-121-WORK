@@ -53,6 +53,10 @@ nav ul li {
     transition: 0.5s;    
 }
 
+.openNav-header h1 {
+    text-align:center;
+}
+
 .openNav-header {
     background-color: #1A237E;
     color:#D1C4E9;

@@ -1,0 +1,156 @@
+body {
+    background-color: #EAF8E7;
+    color: #023336; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 25px;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+}
+
+h1 {
+    color: #4DA674; 
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #023336; 
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.left-gif {
+    position: absolute;
+    top: 90px;
+    right: 0; 
+    width: 170px;
+    height: auto;
+}
+
+.centered-gif {
+    display: block;
+    margin:0 auto;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 15px; 
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(2, 51, 54, 0.95); 
+    overflow-x: hidden;
+    transition: 0.5s;    
+}
+
+.openNav-header h1 {
+    text-align:center;
+    margin: 0;
+    font-size: 40px;
+    flex: 1;
+}
+
+.openNav-header {
+    background-color: #023336; 
+    color: #EAF8E7; 
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    position: absolute; 
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+    cursor: pointer; 
+    font-size: 50px; 
+    color: #EAF8E7;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #C1E6BA;
+    display: block;
+    transition: color 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #4DA674; 
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #023336; 
+    color: #EAF8E7; 
+    padding: 10px 20px; 
+    text-align: center; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
